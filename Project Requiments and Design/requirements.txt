@@ -3,3 +3,13 @@ User Module
     - Able to Logout
     - View Spotify listing history
     - View Top 10 for week/month/year/all (top 10 page)
+
+Music Module
+    - Get 50 most recently played music
+    - Store the retrieved music into the database or server
+    - Display the title,artist,album, played time, and length
+
+Podcast Module  
+    - follows the same rules for the music Module
+
+
