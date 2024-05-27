@@ -14,7 +14,9 @@ function Footer() {
       style={footerStyles}
     >
       <div className="container">
-        <p>&copy; Mohammed Uddin. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} Mohammed Uddin. All rights reserved.
+        </p>
       </div>
     </footer>
   );

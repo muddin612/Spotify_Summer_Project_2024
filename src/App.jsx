@@ -1,14 +1,13 @@
 import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Footer from "./footer.jsx";
-import Navbar from "./header.jsx";
+import Header from "./header/header.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <Navbar />
+      <Header />
       <h1>Body text</h1>
       <Footer />
     </>
