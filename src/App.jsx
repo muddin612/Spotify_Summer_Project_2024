@@ -1,21 +1,23 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import CarouselBody from "./Carousel/CarouselBody";
-import Footer from "./footer.jsx";
-import Header from "./header/header.jsx";
-import Cards from "./History_Body/Cards";
-import HistoryPage from "./History_Body/HistoryPage";
-
+import Home from "./Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./pages/About";
+import Podcast from "./pages/Podcast";
+import LookUp from "./pages/LookUp";
+import NoPage from "./pages/NoPage";
 function App() {
   return (
     <>
-      <Header />
-      <hr />
-      <CarouselBody />
-      <h1 className="container text-center">Listening History</h1>
-      <HistoryPage />
-      <hr />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/podcast" element={<Podcast />} />
+          <Route path="/lookup" element={<LookUp />} />
+          <Route path="/*" element={<NoPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

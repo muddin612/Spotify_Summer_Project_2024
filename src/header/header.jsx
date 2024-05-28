@@ -5,6 +5,7 @@ import SpotifyLogo from "../assets/SpotifyLogoBlack.png";
 import NavLink from "./NavLink";
 import Profile from "./Profile";
 import SearchBar from "./SearchBar";
+import { Routes, Route, Link } from "react-router-dom";
 
 function Header() {
   const navStyle = {
@@ -14,7 +15,7 @@ function Header() {
   return (
     <Navbar expand="lg" style={navStyle}>
       <Container>
-        <Navbar.Brand className="text-dark" href="#home">
+        <Navbar.Brand className="text-dark" as={Link} to="/">
           <img
             src={SpotifyLogo}
             width="30"
