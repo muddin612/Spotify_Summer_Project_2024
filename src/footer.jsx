@@ -1,10 +1,10 @@
 function Footer() {
   const footerStyles = {
     backgroundColor: "#1DB954",
-    color: "#FFFFFFF",
+    color: "#FFFFFF",
     textAlign: "center",
-    flexShrink: 0,
     padding: "1rem 0",
+    marginTop: "auto",
   };
 
   return (
@@ -13,7 +13,7 @@ function Footer() {
       className="footer text-white text-center flex-shrink-0 py-4"
       style={footerStyles}
     >
-      <div className="container">
+      <div className="container text-dark">
         <p>
           &copy; {new Date().getFullYear()} Mohammed Uddin. All rights reserved.
         </p>

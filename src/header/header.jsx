@@ -3,6 +3,8 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import SpotifyLogo from "../assets/SpotifyLogoBlack.png";
 import NavLink from "./NavLink";
+import Profile from "./Profile";
+import SearchBar from "./SearchBar";
 
 function Header() {
   const navStyle = {
@@ -12,18 +14,19 @@ function Header() {
   return (
     <Navbar expand="lg" style={navStyle}>
       <Container>
-        <Navbar.Brand className="text-white" href="#home">
+        <Navbar.Brand className="text-dark" href="#home">
           <img
             src={SpotifyLogo}
             width="30"
             height="30"
             className="d-inline-block align-top"
           />{" "}
-          React-Bootstrap
+          Spotify Listing History
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <NavLink />
+          <SearchBar />
         </Navbar.Collapse>
       </Container>
     </Navbar>

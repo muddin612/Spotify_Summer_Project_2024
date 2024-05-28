@@ -2,3 +2,9 @@ body {
   background-color: #191414;
   color: #ffffff;
 }
+/* div {
+  outline: 2px dotted rgb(249, 4, 4);
+} */
+hr {
+  border: none;
+}

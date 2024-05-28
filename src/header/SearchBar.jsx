@@ -1,16 +1,17 @@
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 export default function SearchBar() {
   return (
     <>
-      <form className="d-flex">
-        <input className="form-control me-2" type="text" placeholder="Search" />
-        <button
-          className="btn btn-primary"
-          type="button"
-          style={{ backgroundColor: "#1DB954" }}
-        >
-          Search
-        </button>
-      </form>
+      <Form className="d-flex">
+        <Form.Control
+          type="search"
+          placeholder="Search"
+          className="me-2"
+          aria-label="Search"
+        />
+        <Button variant="outline-dark">Search</Button>
+      </Form>
     </>
   );
 }

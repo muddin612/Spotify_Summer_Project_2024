@@ -11,6 +11,9 @@ export default function NavLink() {
         <Nav.Link className="text-white" href="#about">
           About
         </Nav.Link>
+        <Nav.Link className="text-white" href="#podcast">
+          Podcast
+        </Nav.Link>
       </Nav>
     </>
   );
