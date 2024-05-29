@@ -1,76 +1,94 @@
 import Cards from "./Cards";
+import styles from "./historyPage.module.css";
+import { Container } from "react-bootstrap";
 
-import Car2 from "../assets/car2.jpg";
-import Car1 from "../assets/cars.jpg";
-import Car3 from "../assets/car3.jpg";
+import album1 from "../assets/album1.jpg";
+import album2 from "../assets/album2.jpg";
+import album3 from "../assets/album3.jpg";
+import album4 from "../assets/album4.jpg";
+import album5 from "../assets/album5.jpg";
 
 export default function HistoryPage() {
-  const cars = [
+  const albums = [
     {
-      name: "BMW",
-      des: "BMW is a German automobile manufacturer known for its luxury vehicles and sporty performance.",
+      title: "Thriller",
+      artist: "Michael Jackson",
+      des: "Thriller is a 1982 album by Michael Jackson, known for its groundbreaking music videos and chart-topping hits like 'Billie Jean' and 'Beat It'.",
     },
     {
-      name: "Audi",
-      des: "Audi is a German automaker that designs, engineers, produces, markets, and distributes luxury vehicles.",
+      title: "Back in Black",
+      artist: "AC/DC",
+      des: "Back in Black is a 1980 album by AC/DC, celebrated for its hard rock sound and classic tracks like 'Hells Bells' and 'You Shook Me All Night Long'.",
     },
     {
-      name: "Mercedes",
-      des: "Mercedes-Benz is a global automobile marque and a division of the German company Daimler AG, known for luxury and innovation.",
+      title: "The Dark Side of the Moon",
+      artist: "Pink Floyd",
+      des: "The Dark Side of the Moon is a 1973 album by Pink Floyd, renowned for its conceptual themes and innovative use of studio effects.",
     },
     {
-      name: "Tesla",
-      des: "Tesla is an American electric vehicle and clean energy company, famous for its innovative electric cars and advanced technology.",
+      title: "Abbey Road",
+      artist: "The Beatles",
+      des: "Abbey Road is a 1969 album by The Beatles, famous for its iconic cover and enduring songs like 'Come Together' and 'Here Comes the Sun'.",
     },
     {
-      name: "Toyota",
-      des: "Toyota is a Japanese automotive manufacturer renowned for its reliable and fuel-efficient cars.",
+      title: "Rumours",
+      artist: "Fleetwood Mac",
+      des: "Rumours is a 1977 album by Fleetwood Mac, known for its smooth rock sound and hits like 'Go Your Own Way' and 'Dreams'.",
     },
     {
-      name: "Honda",
-      des: "Honda is a Japanese public multinational conglomerate manufacturer known for producing high-quality and efficient cars.",
+      title: "Hotel California",
+      artist: "Eagles",
+      des: "Hotel California is a 1976 album by the Eagles, featuring the legendary title track and a mix of rock and country influences.",
     },
     {
-      name: "Ford",
-      des: "Ford is an American multinational automaker that has a long history of producing reliable and popular vehicles.",
+      title: "21",
+      artist: "Adele",
+      des: "21 is a 2011 album by Adele, celebrated for its soulful ballads and chart-toppers like 'Rolling in the Deep' and 'Someone Like You'.",
     },
     {
-      name: "Chevrolet",
-      des: "Chevrolet, often referred to as Chevy, is an American automobile division of the American manufacturer General Motors (GM).",
+      title: "Nevermind",
+      artist: "Nirvana",
+      des: "Nevermind is a 1991 album by Nirvana, credited with bringing grunge music to the mainstream with tracks like 'Smells Like Teen Spirit'.",
     },
     {
-      name: "Nissan",
-      des: "Nissan is a Japanese automobile manufacturer known for its wide range of affordable and efficient vehicles.",
+      title: "The Wall",
+      artist: "Pink Floyd",
+      des: "The Wall is a 1979 album by Pink Floyd, a rock opera that explores themes of isolation and society, featuring the hit 'Another Brick in the Wall'.",
     },
     {
-      name: "Volkswagen",
-      des: "Volkswagen is a German automaker known for producing the iconic Beetle and a range of reliable and well-engineered cars.",
+      title: "Led Zeppelin IV",
+      artist: "Led Zeppelin",
+      des: "Led Zeppelin IV is a 1971 album by Led Zeppelin, known for its diverse musical styles and iconic tracks like 'Stairway to Heaven'.",
     },
   ];
   const getRandomImage = () => {
-    const randomNumber = Math.floor(Math.random() * 3) + 1;
+    const randomNumber = Math.floor(Math.random() * 5) + 1;
     switch (randomNumber) {
       case 1:
-        return Car1;
+        return album1;
       case 2:
-        return Car2;
+        return album2;
       case 3:
-        return Car3;
+        return album3;
+      case 4:
+        return album4;
+      case 5:
+        return album5;
       default:
-        return Car1;
+        return album1;
     }
   };
   return (
     <>
-      <div className="container">
+      <Container className={styles.divpadding}>
         <div className="row">
-          {cars.map((car, index) => (
+          {albums.map((car, index) => (
             <div className="col-md-3" key={index}>
               <Cards key={car.name} cars={car} carSrc={getRandomImage()} />
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </>
   );
 }

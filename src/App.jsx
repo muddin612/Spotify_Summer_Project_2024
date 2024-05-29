@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Podcast from "./pages/Podcast";
 import LookUp from "./pages/LookUp";
 import NoPage from "./pages/NoPage";
+import Top10 from "./pages/Top10";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/podcast" element={<Podcast />} />
           <Route path="/lookup" element={<LookUp />} />
+          <Route path="/top10" element={<Top10 />} />
           <Route path="/*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>

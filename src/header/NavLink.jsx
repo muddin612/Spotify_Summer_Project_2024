@@ -10,6 +10,7 @@ export default function NavLink() {
         <CustomLink to="/about">About</CustomLink>
         <CustomLink to="/podcast">Podcast</CustomLink>
         <CustomLink to="/lookup">Search Spotify</CustomLink>
+        <CustomLink to="/top10">Top 10</CustomLink>
       </Nav>
     </>
   );

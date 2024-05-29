@@ -7,12 +7,13 @@ export default function Home() {
   return (
     <>
       <Header />
-      <hr />
       <CarouselBody />
-      <h1 className="container text-center">Music Listening History</h1>
+      <div className="container text-center mt-5 p-3">
+        <h1 className="display-4 text-center">Music Listening History</h1>
+      </div>
       <HistoryPage />
       <hr />
-      <Footer />;
+      <Footer />
     </>
   );
 }
