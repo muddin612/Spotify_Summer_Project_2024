@@ -3,7 +3,7 @@ export default function Top10() {
   return (
     <>
       <Header />
-      <hr />
+      <Footer />
     </>
   );
 }

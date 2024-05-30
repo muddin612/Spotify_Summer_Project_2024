@@ -4,7 +4,7 @@ export default function Podcast() {
   return (
     <>
       <Header />
-      <hr />
+      <Footer />
     </>
   );
 }
