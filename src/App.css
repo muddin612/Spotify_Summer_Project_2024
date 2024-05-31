@@ -1,12 +1,19 @@
-body {
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: #191414;
   color: #ffffff;
   font-family: "Courier New", Courier, monospace;
-  margin: 0%;
 }
-/* div {
-  outline: 2px dotted rgb(249, 4, 4);
-} */
-hr {
-  border: none;
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
 }

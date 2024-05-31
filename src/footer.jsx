@@ -15,7 +15,8 @@ function Footer() {
     >
       <div className="container text-dark">
         <p>
-          &copy; {new Date().getFullYear()} Mohammed Uddin. All rights reserved.
+          &copy; {new Date().getFullYear()} Mohammed Uddin and Michael Fleurimon
+          and . All rights reserved.
         </p>
       </div>
     </footer>

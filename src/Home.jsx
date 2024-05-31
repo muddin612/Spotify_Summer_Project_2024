@@ -12,7 +12,6 @@ export default function Home() {
         <h1 className="display-4 text-center">Music Listening History</h1>
       </div>
       <HistoryPage />
-      <hr />
       <Footer />
     </>
   );
